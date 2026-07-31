@@ -1,0 +1,21 @@
+<section class="hero">
+  <div class="hero-copy">
+    <p class="eyebrow">Welcome to</p>
+    <h1>David Chu's China Bistro</h1>
+    <p>Explore our menu, discover a random special, or find our location.</p>
+  </div>
+</section>
+
+<section class="home-tiles" aria-label="Restaurant shortcuts">
+  <a class="tile menu-tile" href="#" onclick="$dc.loadMenuCategories(); return false;">
+    <span>Menu</span>
+  </a>
+
+  <a class="tile specials-tile" href="#" onclick="$dc.loadMenuItems('{{randomCategoryShortName}}'); return false;">
+    <span>Specials</span>
+  </a>
+
+  <a class="tile map-tile" href="https://maps.google.com" target="_blank" rel="noopener">
+    <span>Map</span>
+  </a>
+</section>

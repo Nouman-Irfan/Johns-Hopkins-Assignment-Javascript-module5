@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>David Chu's China Bistro</title>
+  <meta name="description" content="Module 5 Coding Assignment — random Specials category using JavaScript.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#" onclick="$dc.loadHome(); return false;" aria-label="Return to home">
+        <span class="brand-mark">DC</span>
+        <span>
+          <strong>David Chu's China Bistro</strong>
+          <small>Kosher Certified</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
+        ☰
+      </button>
+
+      <nav id="main-nav" class="main-nav" aria-label="Main navigation">
+        <a href="#" onclick="$dc.loadMenuCategories(); return false;">Menu</a>
+        <a href="#" onclick="$dc.loadRandomCategory(); return false;">Specials</a>
+        <a href="https://maps.google.com" target="_blank" rel="noopener">Map</a>
+      </nav>
+
+      <a class="phone" href="tel:4106025008">
+        410-602-5008
+        <small>We Deliver</small>
+      </a>
+    </div>
+  </header>
+
+  <main id="main-content" class="container" aria-live="polite">
+    <div class="loading">Loading…</div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <section>
+        <h2>Hours</h2>
+        <p>Sun–Thu: 11:15am–10:00pm<br>Fri: 11:15am–2:30pm<br>Saturday Closed</p>
+      </section>
+      <section>
+        <h2>Address</h2>
+        <p>7105 Reisterstown Road<br>Baltimore, MD 21215</p>
+      </section>
+      <section>
+        <h2>About</h2>
+        <p>Fresh Chinese cuisine prepared with quality ingredients and care.</p>
+      </section>
+    </div>
+    <p class="copyright">© David Chu's China Bistro — Coursera Module 5 Practice Project</p>
+  </footer>
+
+  <script src="js/ajax-utils.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
